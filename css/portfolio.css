@@ -5,20 +5,22 @@
 }
 
 body {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .btn2 {
-  background-color: chocolate;
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
-  color: rgb(73, 68, 68);
-  -webkit-transition: all 0.4s;
+  color: rgb(0, 0, 0);
   transition: all 0.4s;
 }
 
 .btn2:hover {
-  color: white;
+  color: rgb(255, 255, 255);
   border: solid 2px white;
+  background-color: black;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1140px) {
@@ -230,7 +232,6 @@ nav button span {
 }
 
 .header {
-  background-image: url(../images/white_background.jpg);
   width: 100%;
   height: 100vh;
 }
@@ -721,7 +722,11 @@ transform: scale(1.05) ;
 
 .skills .container .other__skills .skill__container .skill h3:hover {
   transform: scale(1.03);
-  background-color: antiquewhite;
+  background-color: rgb(9, 9, 9);
+  color: white;
+  border-radius: 5%;
+  transition: all 0.4s;
+
 }
 
 @media screen and (max-width: 850px) {

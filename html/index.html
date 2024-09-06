@@ -4,269 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <title>Home Page</title>
 </head>
 <body>
+    <nav >
+        <div class="nav__container">
+            <div class="logo">
+                <h1> <a href="./index.html">Mahdi.B</a> </h1>
+            </div>
 
-    <!------------ Nav bar----------- -->
-    <nav>
-        <div class="logo">
-            <h1>Mahdi.B</h1>
+            <ul class="nav__menu">
+                <li class="links"><a href="bio.html">BIO</a></li>
+                <li class="links"><a href="experience.html">Experience</a></li>
+                <li class="links"><a href="portfolio.html">Portfolio</a></li>
+                
+            </ul>
+
+            <div class="button ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
         </div>
-        <ul class="nav__menu">
-          <li><a href="home.html" class="link">Home</a></li>
-          <li><a href="#about" class="link"> About </a></li>
-            <li><a href="#work" class="link"> Work </a></li>
-            <li><a href="#skills" class="link">Skills </a></li>
-            <li><a href="#contact" class="link"> Contact </a></li>
-        </ul>
-
-        <div class="sociale__icon">
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
-            <a href="resume/mahdi belabb.ds" download="mahdi belabbas_1.pdf"><i class="fa-solid fa-file" style="color: #ffffff;"></i></a>
-            <a href="https://github.com/idham19" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-        </div>
-        <button class="btn"> 
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
 
     </nav>
 
-    <!-- ----Header -->
 
-    <section class="header">
+    <!------------------Header---------------------  -->
+
+
+    <header class="header">
         <div class="container">
-            <div class="text__container">
-                <div class="text-1">
-                    <h1>Mahdi Belabbas</h1>
-                    
-                </div>
+            
+            <div class="header__info">
+                <h4>Learn More About</h4>
+                <h1>Mahdi </h1>
+                <p>
+                    Passionate about software development, I am currently a software engineering apprentice focused on honing my skills. I love solving problems and building efficient, innovative solutions. Through hands-on learning and continuous improvement, I'm committed to developing a strong foundation in coding and software design.
+            </p>
+                <a href="bio.html" class="btn">Learn More..</a>
+            </div>
+            <div class="header__image">
+                <img src="https://i.ibb.co/SyT5yKC/business-image.jpg" alt="business-image" border="0">
             </div>
         </div>
-    </section>
-
-
-    <!--------------About---------------  -->
-<section class="about" id="about">
-
-    <div class="container">
-        <h1>About Me</h1>
-        <p style="font-weight: bold; text-align: left">Dedicated and detail-oriented recent graduate of a Web Development Bootcamp, with strong problem-solving abilities in JavaScript and Java. Additionally, I have completed a QA Bootcamp, gaining knowledge of software testing principles and methodologies. I am seeking an entry-level position in software engineering, where I can apply my web development skills to solve real-world problems</p>  
-    </div>
-</section>
-
-
-<!-- -----------work---------- -->
-
-<section class="works" id="work">
-    <section class="services" id="work">
-        <div class="container">
-               <div class="services__title">
-                   <h1>Work</h1>
-               </div>
-
-               <div class="services__container">
-                   <article class="service_work">
-                       <div class="service__info">
-                           <h2 style="color: rgb(255, 253, 253); margin-bottom: 0;">QA Test Automation tester </h2>
-                           <h4 style="color: rgb(255, 255, 255); ">Aug 2022 - March 2023</h4>
-
-                           <h4 style="color: rgb(255, 255, 255);margin-bottom:1.3rem ;">PeoplenTech, New York</h4>
-                           <ol class="service__list">
-                               <li>organizing testing framework and ensured that test functions were performed on defined process.
-                             </li>
-                               <li>Updated /Added Framework functions/libraries when needed for developing automation scripts.
-                            </li>
-                               <li>executing the scripts using Maven and integrating it in Jenkins.
-                            </li>
-                               <li>Created XML suites in TestNG for categorization of tests.</li>
-                               <li>Browser testing using Selenium WebDriver Page Object Model.</li>
-                        </ol>
-                        </div>   
-                   </article>
-
-                   <article class="service_work">
-                    <div class="service__info">
-                        <h2 style="color: rgb(255, 255, 255); margin-bottom: 0;">WEB DEVELOPMENT JAVASCRIPT & JAVA BOOTCAMP </h2>
-                        <h4 style="color: rgb(255, 255, 255);">April 2022 - December 2022</h4>
-                        <h4 style="color: rgb(255, 255, 255);margin-bottom:1.3rem ;">LaunchCode, Philadelphia, PA</h4>
-                       <ol>
-                        <li>Worked with a team of colleagues to create a website using the Petfinder API. 
-                        </li>
-                        <li>Created a website that allows users to search for pets by location, breed, age, and other criteria.
-                        </li>
-                        <li>Included a number of features that make it easy for users to learn more about the pets they are interested in</li>
-                        <li>Tested and debugged the website to ensure that it is working properly.</li>
-                       </ol>
-                     </div>
-                     
-                </article>
-
-               </div>
-       </div>
-   </section>
-
-<div class="container">
-    <h1>Other Project</h1>
-
-    <h2>Web Site</h2>
-    <div class="work__container">
-        <article class="work">
-            <img src="https://i.ibb.co/ZVXvwS1/E-commerce.png" alt="E-commerce" border="0">
-            <h3>E-Commerce </h3>
-            <p>E-commerce Web Site Using Html , Scss and Java-script with fully functional shopping cart and responsive in All Screen Size</p>
-          
-            <span class="live"><a href="https://mahdi-e-commerce.netlify.app/" target="_blank">Live</a></span>
-            <span class="code"><a href="https://github.com/idham19/E-commerce-Website-HTML-SCSS-JAVASCRIPt" target="_blank"> Code</a></span>
-        </article>
-
-        <article class="work">
-            <img src="https://i.ibb.co/JCy2L1M/business.png" alt="business" border="0">       
-            <h3>Business Web Site </h3>
-            <p>Business Web Site  Using HTML SCSS and Java-script responsive in all screen size </p>
-            <span class="live"><a href="https://mahdi-business.netlify.app/" target="_blank">Live</a></span>
-            <span class="code"><a href="https://github.com/idham19/Business-website-sass-html--css" target="_blank"> Code</a></span>
-        </article>
-
-        <article class="work">
-            <img src="https://i.ibb.co/Hzy1Cy4/Health.png" alt="Health" border="0">
-            <h3>Health Care </h3>
-            <p>Heath care Web Site using HTML SCSS and Java-script responsive in all screen size</p>
-            <span class="live"><a href="https://health-web-site.netlify.app/" target="_blank">Live</a></span>
-            <span class="code"><a href="https://github.com/idham19/Health-website-using-html-scss-javascript" target="_blank"> Code</a></span>
-        </article>
-
-    </div>
-    <h1>Other Project</h1>
-    <h2>Email HTML</h2>
-    <div class="work__container">
-
-        <article class="work">
-            <img src="https://i.ibb.co/XkvTgyV/vacation-htm.png" alt="vacation-htm" border="0">            
-            <h3>Promotional Email</h3>
-            <span class="live"><a href="https://mahdiprotionalemail.netlify.app/" target="_blank">Live</a></span>
-            <span class="code"><a href="https://github.com/idham19/Promotional-EMAIL-HTMl" target="_blank"> Code</a></span>
-        </article>
-
-        <article class="work">
-            <img src="https://i.ibb.co/gJZhf7r/reciept.png" alt="reciept" border="0">            
-            <h3>Receipt Email  </h3>
-            <span class="live"><a href="https://mahdi-receipt.netlify.app/" target="_blank">Live</a></span>
-            <span class="code"><a href="https://github.com/idham19/Receipt" target="_blank"> Code</a></span>
-        </article>
-
-        <article class="work">
-            <img src="https://i.ibb.co/xCV22ZB/healthy-html.png" alt="healthy-html" border="0">            
-            <h3>Promotional-Email </h3>
-            <span class="live"><a href="https://mahdi-yourhealth.netlify.app/" target="_blank">Live</a></span>
-            <span class="code"><a href="https://github.com/idham19/EMAIL-HTML--YourHealth" target="_blank"> Code</a></span>
-
-        </article>
-    </div>
-</div>
-</section>
-
-
-<!-- --------------- SKILLS Section ---------------- -->
-
-
-<section class="skills" id="skills">
-    <div class="container">
-
-        <div class="skills__title">
-            <h1>Skills</h1>
-         <span class="html"><i class="fa-brands fa-java"></i></span>
-         <span class="css"><i class="fa-brands fa-css3-alt"></i></span>
-         <span class="js"><i class="fa-brands fa-js"></i></span>
-         <span class="figma"><i class="fas fa-database"></i></span>
-         <span class="sass"><i class="fa-brands fa-sass"></i></span>
-         <span class="ui"><i class="fa-brands fa-html5 fa-lg" style="color: #f50505;"></i></span>
-        </div>
-        <div class="other__skills">
-            <h1>Skills</h1>
-            <div class="skill__container">
-
-                <article class="skill">
-                    <h3>Selenium</h3>
-                    <h3>TestNg</h3>
-                    <h3>Maven</h3>
-                    <h3>Cucumber</h3>
-                    <h3>Git</h3>
-                    <h3>Jenkins</h3>
-                </article>
-
-            <article class="skill" >
-             <h3 style="border-right:solid 1px; border-left:none; text-align: right;">Java</h3>
-             <h3 style="border-right:solid 1px; border-left:none; text-align: right;">JavaScript</h3>
-             <h3 style="border-right:solid 1px; border-left:none; text-align: right;">HTML</h3>
-             <h3 style="border-right:solid 1px; border-left:none; text-align: right;">CSS</h3>
-            </article> 
-             
-        </div>
-
-        </div>
-
-    </div>
-</section>
-
-
-<!-------Contact Section------------  -->
-<footer id="contact">
-    <div class="container">
-
-        <div class="footers__container">
-
-               <article class="footer">
-                   <h1>Contact Me</h1>
-               <p>E-mail: someEmail@gmail.com</p>
-               <p>Address : philadelphia,Pennesylvania</p>
-                   <div class="icons">
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
-                    <a href="/resume/mahdi belabb.ds" download="mahdi belabbas_1.pdf"><i class="fa-solid fa-file" style="color: rgb(255, 255, 255);"></i></a>
-                    <a href="https://github.com/idham19" target="_blank"><i class="fa-brands fa-github"></i></a>
-                   </div>
-           </article>
-
-           <article class="footer">
-               <h1>Menu</h1>
-               <ul class="nav__menu">
-                   <li class="links"><a href="/html/home.html">Home</a></li>
-                   <li class="links"><a href="#about">About</a></li>
-                   <li class="links"><a href="#work">Work</a></li>
-                   <li class="links"><a href="#skills">Skills</a></li>
-                   
-               </ul>
-
-           </article>
-        
-       </div>
-
-       <div class="form">
-           <h1>Send Message</h1>
-
-           
-           <form action="https://formspree.io/f/xzboaddq" method="POST">
-               <input type="text" name="text" required placeholder="Enter Your name">
-               <input type="email" name="email" required placeholder="Enter a Valid Email">
-               <textarea name="add text" id="" cols="20" rows="10" placeholder="Add Message"></textarea>
-               <input type="submit" class="btn2">
-           </form>
-           
-       </div>
-       
-       
-   </div>
-
-
-</footer>
-
-
-
-    <script src="./index.js"></script>
-</body>
-</html>
+    </header>
