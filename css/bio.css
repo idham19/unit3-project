@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+  }
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .container {
+      width: 95%;
+    }
+  }
+  section {
+    margin: 3rem 0;
+  } 
+.about {
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+  }
+  
+  .about .container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+  }
+  
+  .about__container {
+    margin-top: 1rem;
+  }
+  
+   .about__container h3 {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  
+  .about__container h1 {
+    font-weight: 600;
+    margin: 2rem 0;
+  }
+  
+  .about__container p {
+    font-weight: 300;
+    margin-bottom: 4rem;
+    line-height: 1.7;
+  }
+  
+ .about__info {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  
+  .info {
+    background:
+      linear,
+      left top,
+      left bottom,
+    ;
+    background: linear-gradient(#daf3ff, #ffffff);
+    border: 1px solid;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.4s;
+  }
+  .info:hover{
+    transform: scale(1.02);
+    border: 3px solid blue;
+  }
+  
+  .icon i {
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: rgb(75, 78, 233);
+  }
+  
+ .info h3 {
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+  
+   .info p {
+    font-weight: 300;
+    margin: 1rem;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .about .container {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
+     .about__container {
+      text-align: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .about__info {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  button {
+    padding: 15px 25px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(247, 245, 243);
+    transition: all 0.4s;
+    cursor: pointer;
+    color: blue;
+    font-size: 1.3rem;
+    transition: all 0.4s;
+  }
+
+  button:hover{
+    transform: scale(1.02);
+    border-radius: 40px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;    
+}
+nav {
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  margin-bottom: 8rem;
+  background-color: rgb(163, 60, 60);
+ 
+}
+
+.nav__container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 5rem;
+  padding: 1rem;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 1.7rem;
+}
+.logo h1 a {
+  color: rgb(12, 12, 12);
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.nav__menu li {
+  padding-right: 1rem;
+}
+
+ .nav__menu li a {
+  color: rgb(9, 9, 9);
+  font-size: 1.3rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.nav__menu li a:hover {
+  color: #5786e3;
+  transform: scale(1.1);
+}
+
+ .button {
+  display: none;
+  margin-right: 15px;
+}
+
+ .button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2rem;
+  height: 4px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 750px) {
+.nav__menu {
+    right: -200%;
+    position: fixed;
+    top: 3.5rem;
+    width: 100vw;
+    background-color: white;
+    gap: 0;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav__menu li {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 6rem;
+    box-shadow: 0rem -4rem 8rem rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+  }
+  .nav__menu li:hover {
+    background: #929090;
+  }
+  .nav__menu li:hover a {
+    color: white;
+  }
+  .nav__menu.active {
+    right: 0%;
+  }
+  .nav__container .button {
+    display: block;
+  }
+  .button span {
+    transition: all 0.5s;
+  }
+.active span:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+ .active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+ .active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
