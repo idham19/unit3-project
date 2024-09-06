@@ -1,0 +1,136 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  color: black;
+}
+
+
+   .experiences {
+    margin-bottom: 4rem;
+  }
+
+   .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+ .experiences__title h1 {
+    margin-bottom: 5rem;
+    font-size: 2.7rem;
+  }
+  
+  .experience__header {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  
+ .experiences__info h1 {
+    font-weight: 600;
+  }
+  
+   .experiences__info p {
+    margin: 3.5rem 0;
+    line-height: 2;
+  }
+  
+  .experiences__image img {
+    width: 100%;
+    height: 350px;
+  }
+  
+   .experiences__container {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  
+   .experience {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    gap: 3rem;
+    border: 1px solid lightgrey;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+    padding: 3rem;
+    transition: all 0.4s;
+  }
+  
+   .experience:hover {
+    transform: scale(1.02);
+    border-radius: 40px;
+    border: 2px solid black;
+  }
+  
+  .experience__info h3 {
+    margin-bottom: 1rem;
+  }
+  
+.experience__list li {
+    padding: 1rem 0;
+  }
+  
+  .experience__list li a {
+    color: black;
+  }
+  
+ .experience__image img {
+    width: 100%;
+    height: auto;
+    
+  }
+ i {
+    width: 100%;
+    height: auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .experience__header {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    .experiences__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .experiences__container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  button {
+    padding: 15px 25px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(247, 245, 243);
+    transition: all 0.4s;
+    cursor: pointer;
+    color: rgb(3, 3, 3);
+    font-size: 1.3rem;
+    transition: all 0.4s;
+  }
+  button:hover{
+      transform: scale(1.02);
+      border-radius: 40px;
+      border: 2px solid white;
+      background-color: black;
+      color: white;    
+  }
